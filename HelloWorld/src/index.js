@@ -14,7 +14,7 @@ ReactDOM.render(
     title,                                     // what to render
     document.getElementById("react-container") // where to render
 );
-// jsx style
+// babel style
 ReactDOM.render(
     <h2 id="subtitle"
         style={{backgroundColor: "orange", color: "black", fontFamily: "verdana"}}>
