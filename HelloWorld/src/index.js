@@ -1,24 +1,11 @@
-const style = {
-    backgroundColor: "orange",
-    color: "white",
-    fontFamily: "verdana"
-}
+import React from "react";
+import { render } from "react-dom";
+import { hello, goodbye } from "./lib";
 
-const title = React.createElement(
-    "h1",                                               // element to create
-    { id: "title", className: "header", style: style }, // properties
-    "Helo World!"                                       // child element
-);
-// pure react style
-ReactDOM.render(
-    title,                                     // what to render
-    document.getElementById("react-container") // where to render
-);
-// babel style
-ReactDOM.render(
-    <h2 id="subtitle"
-        style={{backgroundColor: "orange", color: "black", fontFamily: "verdana"}}>
-        React is cool!
-    </h2>,
-    document.getElementById("title")
+render(
+    <div>
+        {hello}
+        {goodbye}
+    </div>,
+    document.getElementById("react-container")
 );
