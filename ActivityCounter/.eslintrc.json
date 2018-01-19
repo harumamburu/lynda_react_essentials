@@ -1,7 +1,11 @@
 {
     "env": {
-        "browser": true,
+        "amd": true,
         "es6": true
+    },
+    "globals": {
+        "module": true,
+        "__dirname": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
